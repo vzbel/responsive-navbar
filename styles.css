@@ -36,10 +36,11 @@ nav{
 
 .nav-list{
     list-style-type: none;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-list a{
+    flex-flow: wrap;
     color: white;
 }
 
@@ -49,3 +50,14 @@ a > span{
 }
 
 /* Classes End */
+
+/* Media Queries */
+@media(max-width: 650px){
+    .nav-list{
+        background: silver;
+        flex-direction: column;
+        position: fixed;
+        inset: 0 0 0 35%;
+        padding: 80px 35px;
+    }
+}
