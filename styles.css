@@ -3,3 +3,49 @@
     margin: 0;
     padding: 0;
 }
+
+/* Generic Classes */
+body{
+    background-image: url(https://images.unsplash.com/photo-1644055282767-da7c3d003be4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+nav{
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+/* Generic Classes End */
+
+/* Utility Classes */
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+/* Utility Classes End */
+
+
+/* Classes */
+.star-icon{
+    font-size: 4rem;
+    color: white;
+}
+
+.nav-list{
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.nav-list a{
+    color: white;
+}
+
+a > span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Classes End */
