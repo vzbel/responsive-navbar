@@ -34,6 +34,13 @@ nav{
     color: white;
 }
 
+.mobile-nav-toggle{
+    display: none;
+    border: none;
+    background: none;
+    color: white;
+}
+
 .nav-list{
     list-style-type: none;
     gap: 1.5rem;
@@ -50,12 +57,26 @@ a > span{
 }
 
 /* Classes End */
-
+@media(min-width: 654px){
+    .nav-list{
+        display: flex;
+    }
+}
 /* Media Queries */
 @media(max-width: 650px){
+    .mobile-nav-toggle{
+        display: flex;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 9999;
+    }
+
     .nav-list{
+        display: none;
         background: silver;
         flex-direction: column;
+        z-index: 1000;
         position: fixed;
         inset: 0 0 0 35%;
         padding: 80px 35px;

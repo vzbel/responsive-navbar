@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav class="flex align-center">
@@ -15,26 +19,19 @@
       </div>
 
       <!-- Nav List -->
-      <ul class="nav-list flex">
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="material-symbols-outlined sr-only">menu</span></button>
+      <ul id="primary-navigation" class="nav-list">
         <li>
-          <a class="flex">
-            <span>00</span>HOME
-          </a>
+          <a class="flex"> <span>00</span>HOME </a>
         </li>
         <li>
-          <a class="flex">
-            <span>01</span>DESTINATION
-          </a>
+          <a class="flex"> <span>01</span>DESTINATION </a>
         </li>
         <li>
-          <a class="flex">
-            <span>02</span>CREW
-          </a>
+          <a class="flex"> <span>02</span>CREW </a>
         </li>
         <li>
-          <a class="flex">
-            <span>03</span>TECHNOLOGY
-          </a>
+          <a class="flex"> <span>03</span>TECHNOLOGY </a>
         </li>
       </ul>
     </nav>
